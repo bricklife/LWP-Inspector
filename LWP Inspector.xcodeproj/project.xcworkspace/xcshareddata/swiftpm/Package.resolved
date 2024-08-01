@@ -1,0 +1,24 @@
+{
+  "originHash" : "4d94c4361af24d533af7b1f6c0774c96b5f7a3bacae8bbaf724dbc6bc1c74b06",
+  "pins" : [
+    {
+      "identity" : "lwpkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bricklife/LWPKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8637f8be117fac449f5593091963bdf1f41936b6"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "3d2dc41a01f9e49d84f0a3925fb858bed64f702d",
+        "version" : "1.1.2"
+      }
+    }
+  ],
+  "version" : 3
+}

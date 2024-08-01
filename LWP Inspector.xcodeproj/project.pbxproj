@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB22078E2C5B7B1E00699102 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB22078D2C5B7B1E00699102 /* MyApp.swift */; };
+		CB2207922C5B7B1F00699102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2207912C5B7B1F00699102 /* Assets.xcassets */; };
+		CB2207952C5B7B1F00699102 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2207942C5B7B1F00699102 /* Preview Assets.xcassets */; };
+		CB22079E2C5B7C9500699102 /* LWPKit in Frameworks */ = {isa = PBXBuildFile; productRef = CB22079D2C5B7C9500699102 /* LWPKit */; };
+		CB2207A22C5B7D2700699102 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207A02C5B7D2700699102 /* Scanner.swift */; };
+		CB2207A32C5B7D2700699102 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207A12C5B7D2700699102 /* ScanView.swift */; };
+		CB2207A82C5B7D6D00699102 /* AsyncCoreBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = CB2207A72C5B7D6D00699102 /* AsyncCoreBluetooth */; };
+		CB2207AA2C5B7D9900699102 /* GATT.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207A92C5B7D9900699102 /* GATT.swift */; };
+		CB2207AD2C5B7EC400699102 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = CB2207AC2C5B7EC400699102 /* OrderedCollections */; };
+		CB2207B12C5B7FF400699102 /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207AE2C5B7FF400699102 /* Data+HexString.swift */; };
+		CB2207B22C5B7FF400699102 /* ByteParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207AF2C5B7FF400699102 /* ByteParser.swift */; };
+		CB2207B32C5B7FF400699102 /* Defined.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207B02C5B7FF400699102 /* Defined.swift */; };
+		CB2207B92C5B809F00699102 /* PortModeInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207B42C5B809F00699102 /* PortModeInformationView.swift */; };
+		CB2207BA2C5B809F00699102 /* PortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207B52C5B809F00699102 /* PortView.swift */; };
+		CB2207BB2C5B809F00699102 /* HubPropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207B62C5B809F00699102 /* HubPropertyListView.swift */; };
+		CB2207BC2C5B809F00699102 /* HubPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207B72C5B809F00699102 /* HubPropertyView.swift */; };
+		CB2207BD2C5B809F00699102 /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207B82C5B809F00699102 /* Hub.swift */; };
+		CB2207BF2C5B811300699102 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2207BE2C5B811300699102 /* MainView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB22078A2C5B7B1E00699102 /* LWP Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LWP Inspector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB22078D2C5B7B1E00699102 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
+		CB2207912C5B7B1F00699102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB2207942C5B7B1F00699102 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB22079B2C5B7B4500699102 /* AsyncCoreBluetooth */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AsyncCoreBluetooth; path = ../AsyncCoreBluetooth; sourceTree = "<group>"; };
+		CB2207A02C5B7D2700699102 /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		CB2207A12C5B7D2700699102 /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		CB2207A92C5B7D9900699102 /* GATT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATT.swift; sourceTree = "<group>"; };
+		CB2207AE2C5B7FF400699102 /* Data+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HexString.swift"; sourceTree = "<group>"; };
+		CB2207AF2C5B7FF400699102 /* ByteParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteParser.swift; sourceTree = "<group>"; };
+		CB2207B02C5B7FF400699102 /* Defined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defined.swift; sourceTree = "<group>"; };
+		CB2207B42C5B809F00699102 /* PortModeInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortModeInformationView.swift; sourceTree = "<group>"; };
+		CB2207B52C5B809F00699102 /* PortView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortView.swift; sourceTree = "<group>"; };
+		CB2207B62C5B809F00699102 /* HubPropertyListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubPropertyListView.swift; sourceTree = "<group>"; };
+		CB2207B72C5B809F00699102 /* HubPropertyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubPropertyView.swift; sourceTree = "<group>"; };
+		CB2207B82C5B809F00699102 /* Hub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
+		CB2207BE2C5B811300699102 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB2207872C5B7B1E00699102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB22079E2C5B7C9500699102 /* LWPKit in Frameworks */,
+				CB2207A82C5B7D6D00699102 /* AsyncCoreBluetooth in Frameworks */,
+				CB2207AD2C5B7EC400699102 /* OrderedCollections in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB2207812C5B7B1E00699102 = {
+			isa = PBXGroup;
+			children = (
+				CB22078C2C5B7B1E00699102 /* LWP Inspector */,
+				CB22078B2C5B7B1E00699102 /* Products */,
+				CB2207AB2C5B7EC400699102 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB22078B2C5B7B1E00699102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB22078A2C5B7B1E00699102 /* LWP Inspector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB22078C2C5B7B1E00699102 /* LWP Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				CB22079B2C5B7B4500699102 /* AsyncCoreBluetooth */,
+				CB22078D2C5B7B1E00699102 /* MyApp.swift */,
+				CB2207A92C5B7D9900699102 /* GATT.swift */,
+				CB2207AF2C5B7FF400699102 /* ByteParser.swift */,
+				CB2207AE2C5B7FF400699102 /* Data+HexString.swift */,
+				CB2207B02C5B7FF400699102 /* Defined.swift */,
+				CB2207A02C5B7D2700699102 /* Scanner.swift */,
+				CB2207A12C5B7D2700699102 /* ScanView.swift */,
+				CB2207B82C5B809F00699102 /* Hub.swift */,
+				CB2207BE2C5B811300699102 /* MainView.swift */,
+				CB2207B62C5B809F00699102 /* HubPropertyListView.swift */,
+				CB2207B72C5B809F00699102 /* HubPropertyView.swift */,
+				CB2207B52C5B809F00699102 /* PortView.swift */,
+				CB2207B42C5B809F00699102 /* PortModeInformationView.swift */,
+				CB2207912C5B7B1F00699102 /* Assets.xcassets */,
+				CB2207932C5B7B1F00699102 /* Preview Content */,
+			);
+			path = "LWP Inspector";
+			sourceTree = "<group>";
+		};
+		CB2207932C5B7B1F00699102 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB2207942C5B7B1F00699102 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB2207AB2C5B7EC400699102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB2207892C5B7B1E00699102 /* LWP Inspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB2207982C5B7B1F00699102 /* Build configuration list for PBXNativeTarget "LWP Inspector" */;
+			buildPhases = (
+				CB2207862C5B7B1E00699102 /* Sources */,
+				CB2207872C5B7B1E00699102 /* Frameworks */,
+				CB2207882C5B7B1E00699102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LWP Inspector";
+			packageProductDependencies = (
+				CB22079D2C5B7C9500699102 /* LWPKit */,
+				CB2207A72C5B7D6D00699102 /* AsyncCoreBluetooth */,
+				CB2207AC2C5B7EC400699102 /* OrderedCollections */,
+			);
+			productName = "LWP Inspector";
+			productReference = CB22078A2C5B7B1E00699102 /* LWP Inspector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB2207822C5B7B1E00699102 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CB2207892C5B7B1E00699102 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CB2207852C5B7B1E00699102 /* Build configuration list for PBXProject "LWP Inspector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB2207812C5B7B1E00699102;
+			packageReferences = (
+				CB22079C2C5B7C9500699102 /* XCRemoteSwiftPackageReference "LWPKit" */,
+				CB22079F2C5B7CBF00699102 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				CB2207A62C5B7D6D00699102 /* XCLocalSwiftPackageReference "AsyncCoreBluetooth" */,
+			);
+			productRefGroup = CB22078B2C5B7B1E00699102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB2207892C5B7B1E00699102 /* LWP Inspector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB2207882C5B7B1E00699102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2207952C5B7B1F00699102 /* Preview Assets.xcassets in Resources */,
+				CB2207922C5B7B1F00699102 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB2207862C5B7B1E00699102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2207B12C5B7FF400699102 /* Data+HexString.swift in Sources */,
+				CB2207BF2C5B811300699102 /* MainView.swift in Sources */,
+				CB22078E2C5B7B1E00699102 /* MyApp.swift in Sources */,
+				CB2207B92C5B809F00699102 /* PortModeInformationView.swift in Sources */,
+				CB2207BC2C5B809F00699102 /* HubPropertyView.swift in Sources */,
+				CB2207AA2C5B7D9900699102 /* GATT.swift in Sources */,
+				CB2207BD2C5B809F00699102 /* Hub.swift in Sources */,
+				CB2207BA2C5B809F00699102 /* PortView.swift in Sources */,
+				CB2207A22C5B7D2700699102 /* Scanner.swift in Sources */,
+				CB2207BB2C5B809F00699102 /* HubPropertyListView.swift in Sources */,
+				CB2207A32C5B7D2700699102 /* ScanView.swift in Sources */,
+				CB2207B22C5B7FF400699102 /* ByteParser.swift in Sources */,
+				CB2207B32C5B7FF400699102 /* Defined.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB2207962C5B7B1F00699102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB2207972C5B7B1F00699102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB2207992C5B7B1F00699102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LWP Inspector/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use Bluetooth LE to communicate LEGO hubs";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bricklife.LWP-Inspector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB22079A2C5B7B1F00699102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LWP Inspector/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use Bluetooth LE to communicate LEGO hubs";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bricklife.LWP-Inspector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB2207852C5B7B1E00699102 /* Build configuration list for PBXProject "LWP Inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2207962C5B7B1F00699102 /* Debug */,
+				CB2207972C5B7B1F00699102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB2207982C5B7B1F00699102 /* Build configuration list for PBXNativeTarget "LWP Inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2207992C5B7B1F00699102 /* Debug */,
+				CB22079A2C5B7B1F00699102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CB2207A62C5B7D6D00699102 /* XCLocalSwiftPackageReference "AsyncCoreBluetooth" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AsyncCoreBluetooth;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB22079C2C5B7C9500699102 /* XCRemoteSwiftPackageReference "LWPKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bricklife/LWPKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CB22079F2C5B7CBF00699102 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB22079D2C5B7C9500699102 /* LWPKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB22079C2C5B7C9500699102 /* XCRemoteSwiftPackageReference "LWPKit" */;
+			productName = LWPKit;
+		};
+		CB2207A72C5B7D6D00699102 /* AsyncCoreBluetooth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AsyncCoreBluetooth;
+		};
+		CB2207AC2C5B7EC400699102 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB22079F2C5B7CBF00699102 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB2207822C5B7B1E00699102 /* Project object */;
+}
