@@ -82,7 +82,9 @@ struct PortView: View {
             requestPortInformation()
         }
         .onDisappear {
-            setPower(0)
+            if StartPower.canUse(for: ioType) {
+                setPower(0)
+            }
         }
     }
     
