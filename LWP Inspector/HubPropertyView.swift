@@ -13,9 +13,29 @@ struct HubPropertyView: View {
                 Text(hub.hubProperties[hubProperty]?.description ?? "-")
             }
             
-            Section("Operations") {
+            Section("Supported Operations") {
                 ForEach(hubProperty.operations, id: \.rawValue) { operation in
                     Text(operation.description)
+                }
+            }
+            
+            if hubProperty.operations.contains(where: { $0 == .enableUpdates || $0 == .disableUpdates || $0 == .requestUpdate }) {
+                Section("Update Operations") {
+                    if hubProperty.operations.contains(.enableUpdates) {
+                        Button("Enable Updates") {
+                            operate(.enableUpdates)
+                        }
+                    }
+                    if hubProperty.operations.contains(.disableUpdates) {
+                        Button("Disable Updates") {
+                            operate(.disableUpdates)
+                        }
+                    }
+                    if hubProperty.operations.contains(.requestUpdate) {
+                        Button("Request Update") {
+                            operate(.requestUpdate)
+                        }
+                    }
                 }
             }
             
@@ -68,6 +88,16 @@ struct HubPropertyView: View {
             do {
                 try await hub.write(HubPropertyMessage(property: hubProperty, operation: .reset))
                 try await hub.write(HubPropertyMessage(property: hubProperty, operation: .requestUpdate))
+            } catch {
+                print("Error", error)
+            }
+        }
+    }
+    
+    func operate(_ operation: HubProperty.Operation) {
+        Task {
+            do {
+                try await hub.write(HubPropertyMessage(property: hubProperty, operation: operation))
             } catch {
                 print("Error", error)
             }
